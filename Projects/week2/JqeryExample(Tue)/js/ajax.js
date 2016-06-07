@@ -1,4 +1,4 @@
-var mutantsUrl = 'https://mutant-school.herokuapp.com/api/v1/mutants';
+/*var mutantsUrl = 'https://mutant-school.herokuapp.com/api/v1/mutants';
 
 function processMutants(mutants){
 	$.each(mutants, function(i,mutant){
@@ -22,3 +22,4 @@ $.get({
 	url: mutantsUrl,
 	success: processMutants
 });
+*/

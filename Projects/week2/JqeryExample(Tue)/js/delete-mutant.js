@@ -1,10 +1,12 @@
-function deleteMutant(id){
+function deleteMutant(id, li){
 	
 	$.ajax({
 		url: mutantsUrl + '/' + id,
 		method: 'delete',
 		success: function(){
-			alert('DELETED');
+			if (li) {
+				li.remove();
+			}
 		}
 		
 	});

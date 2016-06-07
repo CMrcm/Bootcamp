@@ -3,7 +3,7 @@ var mutantsUrl = 'https://mutant-school.herokuapp.com/api/v1/mutants';
 $(document).on('click','a.delete',function(ev){ //even listener for any delete link via 'a'
 	var li = $(ev.currentTarget).closest('li');
 	var id = li.data('id');
-	deleteMutant(id);
+	deleteMutant(id, li);
 }); 
 
 function processMutants(mutants){
@@ -11,6 +11,8 @@ function processMutants(mutants){
 		addMutant(mutant);
 	});
 }
+
+$('form').on('submit',createMutant);
 
 function addMutant(mutant){
 	var li = $('li.template')
