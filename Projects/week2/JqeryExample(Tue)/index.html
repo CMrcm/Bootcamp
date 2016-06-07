@@ -7,19 +7,22 @@
 	<body>
 		<h1>jMutants</h1>
 		<form>
+		<input type="hidden" 
 			<input type="text" 
 			name="mutantName"
 			placeholder="Who are you!?">
-			<button type="submit" name="button">CREATE</button>
+			<button type="submit" name="submitButton">CREATE</button>
 		</form>	
 		<ul id="mutantList"></ul>
 			<li class="template"  style="list-style-type:none">
 				<span class="mutantName"></span>
+				<a href="#" class="edit">(edit)</a>
 				<a href="#" class="delete">(delete)</a>
 			</li>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
 		<script src="js/delete-mutant.js"></script>
 		<script src="js/ajax.js"></script>
+		<script src="js/updateMutant.js"></script>
 		<script src="js/createMutant.js"></script>
 		<script src="js/app.js"></script>
 	</body>
