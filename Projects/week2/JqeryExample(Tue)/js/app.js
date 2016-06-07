@@ -11,7 +11,7 @@ function addMutant(mutant){
 		.removeClass('template')
 		.attr('data-id', mutant.id);
 		
-	li.find('.mutant-name')
+	li.find('.mutantName')
 		.html(mutant.mutant_name);
 	$('#mutantList').append(li);
 }
